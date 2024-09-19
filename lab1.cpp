@@ -3,7 +3,10 @@
 #include <cstring>
 #include <cctype>
 using namespace std;
-
+      //forgot to utilize getline in order to accept inputs with spaces
+      //change the chars into a string
+      // redue the tolower function
+      //
 void remove_capital_letters(char first_input[]) {
     for (int i = 0; first_input[i] != 0; i++) {     //function that remove the capital letters
         first_input[i] = tolower(first_input[i]);     
@@ -13,7 +16,7 @@ void remove_capital_letters(char first_input[]) {
 int strcmp_case_insensitive(const char first_input[], const char second_input[]){
    char first_input_no_capitals[100];   
    char second_input_no_capitals[100];
-   strcpy(first_input_no_capitals, first_input);
+   strcpy(first_input_no_capitals, first_input);  //strcpy copy and paste data 
    strcpy(second_input_no_capitals, second_input);
    remove_capital_letters(first_input_no_capitals);             //function that compares 
    remove_capital_letters(second_input_no_capitals);            //case insensitive
